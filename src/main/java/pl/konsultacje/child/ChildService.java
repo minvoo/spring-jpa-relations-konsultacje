@@ -7,7 +7,7 @@ public interface ChildService {
 
     List<Child> findAllChildren();
 
-    Optional<List<Child>> findChildrenByParentsAge(Integer age);
+    List<Child> findChildrenByParentsAge(Integer age);
 
     Optional<Child> findByChildId(Long id);
 

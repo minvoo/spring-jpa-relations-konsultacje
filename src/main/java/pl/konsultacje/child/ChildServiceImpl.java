@@ -3,6 +3,7 @@ package pl.konsultacje.child;
 import org.springframework.stereotype.Service;
 import pl.konsultacje.parent.ParentRepo;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,8 +26,8 @@ public class ChildServiceImpl implements ChildService {
 
     //TODO
     @Override
-    public Optional<List<Child>> findChildrenByParentsAge(Integer age) {
-        return Optional.empty();
+    public List<Child> findChildrenByParentsAge(Integer age) {
+        return Collections.emptyList();
     }
 
     @Override

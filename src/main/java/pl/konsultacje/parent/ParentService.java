@@ -10,7 +10,7 @@ public interface ParentService {
 
     List<Parent> findAllParents();
 
-    Optional<List<Parent>> findParentsByChildrenAge(Integer age);
+    List<Parent> findParentsByChildrenAge(Integer age);
 
     Optional<Parent> findByParentId(Long id);
 

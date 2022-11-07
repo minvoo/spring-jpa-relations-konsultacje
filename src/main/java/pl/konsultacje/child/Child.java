@@ -1,6 +1,7 @@
 package pl.konsultacje.child;
 
 import lombok.Data;
+import pl.konsultacje.parent.Parent;
 
 import javax.persistence.*;
 
@@ -15,8 +16,14 @@ public class Child {
 
     @Column(nullable = false, name = "FIRST_NAME")
     private String firstName;
+
     @Column(nullable = false, name = "LAST_NAME")
     private String lastName;
+
     @Column(nullable = false, name = "AGE")
     private Integer age;
+
+    @ManyToOne
+    private Parent parent;
+
 }
