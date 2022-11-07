@@ -1,0 +1,1 @@
+### Templatka cruda do konsultacji - do relacji w bazie danych (bez mapperów, dto)

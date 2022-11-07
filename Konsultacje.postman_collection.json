@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "cf9cca89-05f9-41ac-b950-5b82574fc4fd",
+		"name": "Konsultacje",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23758202"
+	},
+	"item": [
+		{
+			"name": "Add children",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"jasiu\",\n    \"lastName\" : \"kowalski\",\n    \"age\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/children/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"children",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add parent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"jan\",\n    \"lastName\" : \"kowalski\",\n    \"age\": 25\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/parents/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all parents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/parents/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all children",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/children/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"children",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get child by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/children/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"children",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get parent by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/parents/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parents",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update child by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"jasiu2\",\n    \"lastName\" : \"kowalski2\",\n    \"age\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/children/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"children",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update parent by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"jasiu2\",\n    \"lastName\" : \"kowalski2\",\n    \"age\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/parents/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parents",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Child by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/children/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"children",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete parent By id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/parents/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parents",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
