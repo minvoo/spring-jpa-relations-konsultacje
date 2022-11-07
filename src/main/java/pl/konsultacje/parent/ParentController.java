@@ -26,7 +26,7 @@ public class ParentController {
         return service.saveParent(parent);
     }
 
-    @PutMapping("/parents/{id}")
+    @PatchMapping("/parents/{id}")
     public Parent updateParent(@PathVariable("id") Long id,
                                @RequestBody Parent parent) {
         return service.updateByParentId(parent, id);

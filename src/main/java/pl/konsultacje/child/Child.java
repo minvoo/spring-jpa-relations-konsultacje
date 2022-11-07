@@ -1,10 +1,16 @@
 package pl.konsultacje.child;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import pl.konsultacje.parent.Parent;
 
 import javax.persistence.*;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "child")
 public class Child {
@@ -19,4 +25,9 @@ public class Child {
     private String lastName;
     @Column(nullable = false, name = "AGE")
     private Integer age;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="parent_id", referencedColumnName = "id")
+    @ToString.Exclude
+    private Parent parent;
 }
