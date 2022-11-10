@@ -11,9 +11,9 @@ public interface ChildService {
 
     Optional<Child> findByChildId(Long id);
 
-    Child updateByChildId(Child child, Long id);
+    Child updateByChildId(ChildFormDto child, Long id);
 
-    Child saveChild(Child child);
+    Child saveChild(ChildFormDto child);
 
     void deleteChild(Long id);
 

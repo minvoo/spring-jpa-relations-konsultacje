@@ -27,7 +27,7 @@ public class Parent {
     @Column(nullable = false, name = "AGE")
     private Integer age;
 
-    @OneToOne(mappedBy = "parent")
+    @OneToOne(mappedBy = "parent",cascade = CascadeType.ALL)
     @JsonIgnore
     private Child child;
 }
